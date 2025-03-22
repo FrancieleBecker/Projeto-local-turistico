@@ -1,27 +1,121 @@
-body {
-  background-color: #f5f4f0;
- 
+:root {
+  font-family: "Open Sans", sans-serif;
+  line-height: auto;
 }
 
-#page {
-  box-sizing: border-box;
-  width: 1120px;
-  height: 3054px;
-  padding: 0;
+body {
+  background-color: #f5f4f0;
   margin: 0;
-  align-content: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  }
+
+#page {
+  width: 100%;
+  max-width: 1120px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center; 
+}
+
+h1, h2 {
+  text-align: left;
+}
+
+h3 {
+  margin: 40px 0 0 0;
+  font-size: 28px;
+}
+
+h4 {
+  padding: 20px 0 0 0;
+  margin: 0; 
+}
+
+#Imagem-e-descricao-da-imagem-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+#Imagem-e-descricao-da-imagem-principal p {
+  font-size: 16px;
+  text-align: center;
+}
+
+ol {
+  padding: 0;
+  width: 100%;
+  align-items: flex-start;  
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  list-style-position: inside;
+}
+
+ol li {
+  line-height: auto;
+  display: flex;
+  align-items: baseline;
+  text-align: left;
+  margin-bottom: 0;
+  padding: 0;
+  position: relative;
+}
+
+ol p {
+  padding: 2px 0 0 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+ol img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 28px; 
+  margin-bottom: 5px;
 }
 
 img {
   border-radius: 28px;
-
+  max-width: 100%;
+  height: auto;
 }
 
-/* ul li::maker {
-  color: #591B98;
-  color: #E5245E;
+ul {
+  list-style-type: disc;
+  padding: 0;
+  margin: 0;
+  display: block;
+  padding: 0;
+  width: 100%;
+  list-style-position: inside;
+}
+
+ul li::marker {
+  color: black;
+}
+
+ul li:nth-child(1) {
+  color: #591B98;  
+}
+
+ul li:nth-child(2) {
+  color: #E5245E;  
+}
+
+ul li:nth-child(3) {
   color: #E95E10;
-} */
+}
 
 .divider {
   width: 100%;
@@ -37,5 +131,8 @@ img {
 footer {
   color: #333333;
   text-align: center;
-  padding-bottom: 48px;
+  padding: 20px 0;
+  margin-top: auto;
+  font-size: 16px;
+  
 }
